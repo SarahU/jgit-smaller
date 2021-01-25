@@ -55,7 +55,6 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.WriteListener;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.http.HttpStatus;
 import org.eclipse.jgit.lfs.lib.AnyLongObjectId;
 import org.eclipse.jgit.lfs.lib.Constants;
 import org.eclipse.jgit.util.HttpSupport;
@@ -160,7 +159,7 @@ public class ObjectDownloadListener implements WriteListener {
 	public void onError(Throwable e) {
 		try {
 			FileLfsServlet.sendError(response,
-					HttpStatus.SC_INTERNAL_SERVER_ERROR, e.getMessage());
+					500, e.getMessage());
 			context.complete();
 			in.close();
 		} catch (IOException ex) {

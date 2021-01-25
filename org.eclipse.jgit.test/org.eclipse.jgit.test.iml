@@ -25,30 +25,13 @@
     <orderEntry type="library" name="Maven: com.jcraft:jzlib:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: com.googlecode.javaewah:JavaEWAH:1.1.6" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.2" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.activation:jakarta.activation-api:1.2.2" level="project" />
     <orderEntry type="module" module-name="org.eclipse.jgit.junit" />
     <orderEntry type="module" module-name="org.eclipse.jgit.junit.ssh" />
     <orderEntry type="library" name="Maven: org.apache.sshd:sshd-core:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.sshd:sshd-sftp:2.0.0" level="project" />
     <orderEntry type="module" module-name="org.eclipse.jgit.ui" />
-    <orderEntry type="library" name="Maven: args4j:args4j:2.33" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.18" level="project" />
-    <orderEntry type="library" name="Maven: org.osgi:org.osgi.core:4.3.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.9" level="project" />
-    <orderEntry type="library" name="Maven: net.i2p.crypto:eddsa:0.3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.5" level="project" />
-    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.2" level="project" />
-    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.10" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.2" level="project" />
-    <orderEntry type="library" name="Maven: log4j:log4j:1.2.15" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-servlet:9.4.11.v20180605" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-security:9.4.11.v20180605" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-server:9.4.11.v20180605" level="project" />
-    <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-http:9.4.11.v20180605" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-util:9.4.11.v20180605" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-io:9.4.11.v20180605" level="project" />
-    <orderEntry type="module" module-name="org.eclipse.jgit.lfs" />
-    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.2" level="project" />
-    <orderEntry type="module" module-name="org.eclipse.jgit.lfs.server" />
+    <orderEntry type="library" name="Maven: org.eclipse.jgit:org.eclipse.jgit.pgm:5.3.0-SNAPSHOT" level="project" />
   </component>
 </module>

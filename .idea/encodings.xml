@@ -15,13 +15,6 @@
     <file url="file://$PROJECT_DIR$/org.eclipse.jgit.lfs.test/src" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.jgit.lfs/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.jgit.lfs/src" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/org.eclipse.jgit.pgm" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/org.eclipse.jgit.pgm.test/src" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/org.eclipse.jgit.pgm/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/org.eclipse.jgit.pgm/src" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/org.eclipse.jgit.ssh.apache" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/org.eclipse.jgit.ssh.apache/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/org.eclipse.jgit.ssh.apache/src" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.jgit.test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.jgit.test/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/org.eclipse.jgit.test/src" charset="UTF-8" />

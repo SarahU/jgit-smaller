@@ -46,16 +46,9 @@ package org.eclipse.jgit.junit.http;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.eclipse.jetty.servlet.ServletContextHandler;
-import org.eclipse.jetty.servlet.ServletHolder;
-import org.eclipse.jgit.errors.RepositoryNotFoundException;
-import org.eclipse.jgit.http.server.GitServlet;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.transport.URIish;
-import org.eclipse.jgit.transport.resolver.RepositoryResolver;
-import org.eclipse.jgit.transport.resolver.ServiceNotEnabledException;
 
 /**
  * Simple http server for testing http access to Git repositories.
@@ -135,27 +128,23 @@ public class SimpleHttpServer {
 	}
 
 	private ServletContextHandler smart(String path) {
-		GitServlet gs = new GitServlet();
-		gs.setRepositoryResolver(new RepositoryResolver<HttpServletRequest>() {
-			@Override
-			public Repository open(HttpServletRequest req, String name)
-					throws RepositoryNotFoundException,
-					ServiceNotEnabledException {
-				if (!name.equals(nameOf(db)))
-					throw new RepositoryNotFoundException(name);
-
-				db.incrementOpen();
-				return db;
-			}
-		});
-
-		ServletContextHandler ctx = server.addContext(path);
-		ctx.addServlet(new ServletHolder(gs), "/*");
-		return ctx;
-	}
-
-	private static String nameOf(Repository db) {
-		return db.getDirectory().getName();
+//		GitServlet gs = new GitServlet();
+//		gs.setRepositoryResolver(new RepositoryResolver<HttpServletRequest>() {
+//			@Override
+//			public Repository open(HttpServletRequest req, String name)
+//					throws RepositoryNotFoundException,
+//					ServiceNotEnabledException {
+//				if (!name.equals(nameOf(db)))
+//					throw new RepositoryNotFoundException(name);
+//
+//				db.incrementOpen();
+//				return db;
+//			}
+//		});
+//
+//		ServletContextHandler ctx = server.addContext(path);
+//		ctx.addServlet(new ServletHolder(gs), "/*");
+		return null;
 	}
 
 	private URIish toURIish(String path) throws URISyntaxException {

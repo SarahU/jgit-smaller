@@ -57,7 +57,6 @@ import javax.servlet.ServletInputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.http.HttpStatus;
 import org.eclipse.jgit.lfs.errors.CorruptLongObjectException;
 import org.eclipse.jgit.lfs.internal.AtomicObjectOutputStream;
 import org.eclipse.jgit.lfs.lib.AnyLongObjectId;
@@ -173,10 +172,10 @@ public class ObjectUploadListener implements ReadListener {
 			channel.close();
 			int status;
 			if (e instanceof CorruptLongObjectException) {
-				status = HttpStatus.SC_BAD_REQUEST;
+				status = 500;
 				LOG.log(Level.WARNING, e.getMessage(), e);
 			} else {
-				status = HttpStatus.SC_INTERNAL_SERVER_ERROR;
+				status = 500;
 				LOG.log(Level.SEVERE, e.getMessage(), e);
 			}
 			FileLfsServlet.sendError(response, status, e.getMessage());

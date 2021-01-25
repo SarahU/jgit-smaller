@@ -53,7 +53,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.http.HttpStatus;
 import org.eclipse.jgit.lfs.errors.InvalidLongObjectIdException;
 import org.eclipse.jgit.lfs.lib.AnyLongObjectId;
 import org.eclipse.jgit.lfs.lib.Constants;
@@ -102,7 +101,7 @@ public class FileLfsServlet extends HttpServlet {
 		AnyLongObjectId obj = getObjectToTransfer(req, rsp);
 		if (obj != null) {
 			if (repository.getSize(obj) == -1) {
-				sendError(rsp, HttpStatus.SC_NOT_FOUND, MessageFormat
+				sendError(rsp, 500, MessageFormat
 						.format(LfsServerText.get().objectNotFound,
 								obj.getName()));
 				return;
@@ -133,14 +132,14 @@ public class FileLfsServlet extends HttpServlet {
 		String info = req.getPathInfo();
 		int length = 1 + Constants.LONG_OBJECT_ID_STRING_LENGTH;
 		if (info.length() != length) {
-			sendError(rsp, HttpStatus.SC_UNPROCESSABLE_ENTITY, MessageFormat
+			sendError(rsp, 500, MessageFormat
 					.format(LfsServerText.get().invalidPathInfo, info));
 			return null;
 		}
 		try {
 			return LongObjectId.fromString(info.substring(1, length));
 		} catch (InvalidLongObjectIdException e) {
-			sendError(rsp, HttpStatus.SC_UNPROCESSABLE_ENTITY, e.getMessage());
+			sendError(rsp, 500, e.getMessage());
 			return null;
 		}
 	}

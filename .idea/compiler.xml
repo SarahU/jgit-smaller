@@ -8,14 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="org.eclipse.jgit.junit" />
+        <module name="org.eclipse.jgit.lfs" />
         <module name="org.eclipse.jgit.lfs.test" />
         <module name="org.eclipse.jgit.junit.http" />
-        <module name="org.eclipse.jgit" />
-        <module name="org.eclipse.jgit.lfs" />
         <module name="org.eclipse.jgit.junit.ssh" />
         <module name="org.eclipse.jgit.lfs.server" />
         <module name="org.eclipse.jgit.ui" />
         <module name="org.eclipse.jgit.lfs.server.test" />
+        <module name="org.eclipse.jgit" />
         <module name="org.eclipse.jgit.test" />
       </profile>
     </annotationProcessing>
@@ -46,26 +46,26 @@
   </component>
   <component name="EclipseCompilerSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="org.eclipse.jgit" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit/.settings/org.eclipse.jdt.core.prefs" />
+      <module name="org.eclipse.jgit" options="-properties /Users/sarahusher/Projects/jgit-smaller/org.eclipse.jgit/.settings/org.eclipse.jdt.core.prefs" />
       <module name="org.eclipse.jgit.ant" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.ant/.settings/org.eclipse.jdt.core.prefs" />
       <module name="org.eclipse.jgit.ant.test" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.ant.test/.settings/org.eclipse.jdt.core.prefs" />
       <module name="org.eclipse.jgit.archive" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.archive/.settings/org.eclipse.jdt.core.prefs" />
       <module name="org.eclipse.jgit.http.apache" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.http.apache/.settings/org.eclipse.jdt.core.prefs" />
       <module name="org.eclipse.jgit.http.server" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.http.server/.settings/org.eclipse.jdt.core.prefs" />
       <module name="org.eclipse.jgit.http.test" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.http.test/.settings/org.eclipse.jdt.core.prefs" />
-      <module name="org.eclipse.jgit.junit" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.junit/.settings/org.eclipse.jdt.core.prefs" />
-      <module name="org.eclipse.jgit.junit.http" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.junit.http/.settings/org.eclipse.jdt.core.prefs" />
-      <module name="org.eclipse.jgit.junit.ssh" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.junit.ssh/.settings/org.eclipse.jdt.core.prefs" />
-      <module name="org.eclipse.jgit.lfs" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.lfs/.settings/org.eclipse.jdt.core.prefs" />
-      <module name="org.eclipse.jgit.lfs.server" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.lfs.server/.settings/org.eclipse.jdt.core.prefs" />
-      <module name="org.eclipse.jgit.lfs.server.test" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.lfs.server.test/.settings/org.eclipse.jdt.core.prefs" />
-      <module name="org.eclipse.jgit.lfs.test" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.lfs.test/.settings/org.eclipse.jdt.core.prefs" />
+      <module name="org.eclipse.jgit.junit" options="-properties /Users/sarahusher/Projects/jgit-smaller/org.eclipse.jgit.junit/.settings/org.eclipse.jdt.core.prefs" />
+      <module name="org.eclipse.jgit.junit.http" options="-properties /Users/sarahusher/Projects/jgit-smaller/org.eclipse.jgit.junit.http/.settings/org.eclipse.jdt.core.prefs" />
+      <module name="org.eclipse.jgit.junit.ssh" options="-properties /Users/sarahusher/Projects/jgit-smaller/org.eclipse.jgit.junit.ssh/.settings/org.eclipse.jdt.core.prefs" />
+      <module name="org.eclipse.jgit.lfs" options="-properties /Users/sarahusher/Projects/jgit-smaller/org.eclipse.jgit.lfs/.settings/org.eclipse.jdt.core.prefs" />
+      <module name="org.eclipse.jgit.lfs.server" options="-properties /Users/sarahusher/Projects/jgit-smaller/org.eclipse.jgit.lfs.server/.settings/org.eclipse.jdt.core.prefs" />
+      <module name="org.eclipse.jgit.lfs.server.test" options="-properties /Users/sarahusher/Projects/jgit-smaller/org.eclipse.jgit.lfs.server.test/.settings/org.eclipse.jdt.core.prefs" />
+      <module name="org.eclipse.jgit.lfs.test" options="-properties /Users/sarahusher/Projects/jgit-smaller/org.eclipse.jgit.lfs.test/.settings/org.eclipse.jdt.core.prefs" />
       <module name="org.eclipse.jgit.pgm" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.pgm/.settings/org.eclipse.jdt.core.prefs" />
       <module name="org.eclipse.jgit.pgm.test" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.pgm.test/.settings/org.eclipse.jdt.core.prefs" />
       <module name="org.eclipse.jgit.ssh.apache" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.ssh.apache/.settings/org.eclipse.jdt.core.prefs" />
       <module name="org.eclipse.jgit.ssh.apache.test" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.ssh.apache.test/.settings/org.eclipse.jdt.core.prefs" />
-      <module name="org.eclipse.jgit.test" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.test/.settings/org.eclipse.jdt.core.prefs" />
-      <module name="org.eclipse.jgit.ui" options="-properties /Users/sarahusher/Projects/jgit/org.eclipse.jgit.ui/.settings/org.eclipse.jdt.core.prefs" />
+      <module name="org.eclipse.jgit.test" options="-properties /Users/sarahusher/Projects/jgit-smaller/org.eclipse.jgit.test/.settings/org.eclipse.jdt.core.prefs" />
+      <module name="org.eclipse.jgit.ui" options="-properties /Users/sarahusher/Projects/jgit-smaller/org.eclipse.jgit.ui/.settings/org.eclipse.jdt.core.prefs" />
     </option>
   </component>
 </project>
